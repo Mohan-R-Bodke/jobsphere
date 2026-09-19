@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>JobSphere - Candidate Profile</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        JobSphere
+    </div>
+
+
+    <nav>
+
+        <a href="candidate-dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="jobs.html">
+            Find Jobs
+        </a>
+
+        <a href="candidate-applications.html">
+            My Applications
+        </a>
+
+        <a href="candidate-profile.html">
+            Profile
+        </a>
+
+        <a href="#" id="logoutBtn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="profile-container">
+
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="dashboard-label">
+                PROFILE SETTINGS
+            </p>
+
+            <h1>
+                My Profile
+            </h1>
+
+            <p>
+                Keep your professional information updated
+                for recruiters.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="profile-card">
+
+
+        <div class="profile-card-header">
+
+            <div class="profile-icon">
+                👤
+            </div>
+
+            <div>
+
+                <h2>
+                    Professional Information
+                </h2>
+
+                <p>
+                    Add your education, skills, experience
+                    and resume details.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form id="profileForm">
+
+
+            <div class="profile-form-grid">
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        autocomplete="tel">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="education">
+                        Education
+                    </label>
+
+                    <input
+                        type="text"
+                        id="education"
+                        placeholder="e.g. B.E. Computer Science"
+                        autocomplete="organization-title">
+
+                </div>
+
+
+                <div class="form-group full-form-field">
+
+                    <label for="skills">
+                        Skills
+                    </label>
+
+                    <textarea
+                        id="skills"
+                        rows="4"
+                        placeholder="Java, Spring Boot, MySQL, HTML, CSS..."></textarea>
+
+                    <small>
+                        Separate multiple skills with commas.
+                    </small>
+
+                </div>
+
+
+                <div class="form-group full-form-field">
+
+                    <label for="experience">
+                        Experience
+                    </label>
+
+                    <textarea
+                        id="experience"
+                        rows="4"
+                        placeholder="Describe your experience, projects or relevant background"></textarea>
+
+                </div>
+
+
+                <div class="form-group full-form-field">
+
+                    <label for="resumeUrl">
+                        Resume URL
+                    </label>
+
+                    <input
+                        type="url"
+                        id="resumeUrl"
+                        placeholder="https://example.com/resume.pdf">
+
+                    <small>
+                        Add a link to your online resume.
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn primary full-width">
+
+                Save Profile
+
+            </button>
+
+
+        </form>
+
+
+        <p
+            id="profileMessage"
+            class="message"
+            aria-live="polite">
+        </p>
+
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 JobSphere. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/candidate-profile.js"></script>
+
+
+</body>
+
+</html>

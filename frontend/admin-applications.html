@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>JobSphere - All Applications</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        JobSphere
+    </div>
+
+
+    <nav>
+
+        <a href="admin-dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="admin-users.html">
+            Users
+        </a>
+
+        <a href="admin-jobs.html">
+            Jobs
+        </a>
+
+        <a href="admin-applications.html">
+            Applications
+        </a>
+
+        <a href="#" id="logoutBtn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="jobs-container">
+
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="dashboard-label">
+                APPLICATION MANAGEMENT
+            </p>
+
+            <h1>
+                All Applications
+            </h1>
+
+            <p>
+                Monitor job applications submitted by candidates
+                across the JobSphere platform.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="applications-summary">
+
+
+        <div class="summary-card">
+
+            <div class="summary-icon">
+                📋
+            </div>
+
+            <div>
+
+                <h3>
+                    Application Overview
+                </h3>
+
+                <p>
+                    Review application activity and current
+                    application statuses across the platform.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <p
+        id="applicationsMessage"
+        class="message"
+        aria-live="polite">
+    </p>
+
+
+    <section class="jobs-results">
+
+
+        <div class="results-header">
+
+            <h2>
+                Submitted Applications
+            </h2>
+
+            <p>
+                All candidate applications are displayed below.
+            </p>
+
+        </div>
+
+
+        <section
+            id="applicationsContainer"
+            class="jobs-grid">
+
+            <!-- Applications will be loaded here -->
+
+        </section>
+
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 JobSphere. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/admin-applications.js"></script>
+
+</body>
+
+</html>

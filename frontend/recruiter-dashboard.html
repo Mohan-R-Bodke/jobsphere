@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>JobSphere - Recruiter Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        JobSphere
+    </div>
+
+
+    <nav>
+
+        <a href="recruiter-dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="recruiter-jobs.html">
+            My Jobs
+        </a>
+
+        <a href="recruiter-profile.html">
+            Company Profile
+        </a>
+
+        <a href="#" id="logoutBtn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="dashboard-container">
+
+
+    <section class="dashboard-header">
+
+        <div>
+
+            <p class="dashboard-label">
+                RECRUITER PORTAL
+            </p>
+
+            <h1>
+                Recruiter Dashboard
+            </h1>
+
+            <p>
+                Manage your job postings, applicants and
+                company profile from one place.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-cards">
+
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-card-icon">
+                ➕
+            </div>
+
+            <h3>
+                Create Job
+            </h3>
+
+            <p>
+                Post a new job opportunity and connect
+                with qualified candidates.
+            </p>
+
+            <button
+                class="dashboard-btn"
+                id="createJobBtn">
+
+                Create Job
+
+            </button>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-card-icon">
+                💼
+            </div>
+
+            <h3>
+                My Jobs
+            </h3>
+
+            <p>
+                View, edit and manage the job opportunities
+                you have posted.
+            </p>
+
+            <button
+                class="dashboard-btn"
+                id="myJobsBtn">
+
+                Manage Jobs
+
+            </button>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-card-icon">
+                👥
+            </div>
+
+            <h3>
+                Applicants
+            </h3>
+
+            <p>
+                Review candidates and manage applications
+                received for your jobs.
+            </p>
+
+            <button
+                class="dashboard-btn"
+                id="applicantsBtn">
+
+                View Applicants
+
+            </button>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-card-icon">
+                🏢
+            </div>
+
+            <h3>
+                Company Profile
+            </h3>
+
+            <p>
+                Keep your company information updated
+                for potential candidates.
+            </p>
+
+            <button
+                class="dashboard-btn"
+                id="profileBtn">
+
+                Manage Profile
+
+            </button>
+
+        </div>
+
+
+    </section>
+
+
+    <section class="welcome-section">
+
+        <p class="welcome-label">
+            ACCOUNT
+        </p>
+
+        <h2>
+            Welcome, Recruiter
+        </h2>
+
+        <p id="userEmail"></p>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 JobSphere. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/recruiter.js"></script>
+
+
+</body>
+
+</html>

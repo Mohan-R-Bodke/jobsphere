@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>JobSphere - My Jobs</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        JobSphere
+    </div>
+
+
+    <nav>
+
+        <a href="recruiter-dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="recruiter-jobs.html">
+            My Jobs
+        </a>
+
+        <a href="create-job.html">
+            Create Job
+        </a>
+
+        <a href="recruiter-profile.html">
+            Company Profile
+        </a>
+
+        <a href="#" id="logoutBtn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="jobs-container">
+
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="dashboard-label">
+                JOB MANAGEMENT
+            </p>
+
+            <h1>
+                My Jobs
+            </h1>
+
+            <p>
+                Manage the job opportunities you have posted
+                on JobSphere.
+            </p>
+
+        </div>
+
+
+        <div class="page-header-action">
+
+            <a
+                href="create-job.html"
+                class="btn primary">
+
+                Create New Job
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="jobs-results">
+
+        <div class="results-header">
+
+            <h2>
+                Your Job Postings
+            </h2>
+
+            <p>
+                View, edit or remove your active job postings.
+            </p>
+
+        </div>
+
+
+        <p
+            id="jobsMessage"
+            class="message"
+            aria-live="polite">
+        </p>
+
+
+        <section
+            id="jobsContainer"
+            class="jobs-grid">
+
+            <!-- Jobs will be loaded here -->
+
+        </section>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 JobSphere. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/recruiter-jobs.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>JobSphere - Edit Job</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        JobSphere
+    </div>
+
+
+    <nav>
+
+        <a href="recruiter-dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="recruiter-jobs.html">
+            My Jobs
+        </a>
+
+        <a href="create-job.html">
+            Create Job
+        </a>
+
+        <a href="recruiter-profile.html">
+            Company Profile
+        </a>
+
+        <a href="#" id="logoutBtn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="profile-container">
+
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="dashboard-label">
+                JOB MANAGEMENT
+            </p>
+
+            <h1>
+                Edit Job
+            </h1>
+
+            <p>
+                Update the details of your existing job posting.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="profile-card">
+
+
+        <div class="profile-card-header">
+
+            <div class="profile-icon">
+                ✏️
+            </div>
+
+            <div>
+
+                <h2>
+                    Job Details
+                </h2>
+
+                <p>
+                    Make your changes and save the updated
+                    job posting.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form id="editJobForm">
+
+
+            <div class="profile-form-grid">
+
+
+                <div class="form-group">
+
+                    <label for="title">
+                        Job Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="title"
+                        placeholder="e.g. Java Backend Developer"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="company">
+                        Company
+                    </label>
+
+                    <input
+                        type="text"
+                        id="company"
+                        placeholder="Company name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group full-form-field">
+
+                    <label for="description">
+                        Job Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="7"
+                        placeholder="Describe the role, responsibilities and requirements..."
+                        required></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="e.g. Pune, Maharashtra"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="jobType">
+                        Job Type
+                    </label>
+
+                    <select id="jobType" required>
+
+                        <option value="">
+                            Select Job Type
+                        </option>
+
+                        <option value="FULL_TIME">
+                            Full Time
+                        </option>
+
+                        <option value="PART_TIME">
+                            Part Time
+                        </option>
+
+                        <option value="INTERNSHIP">
+                            Internship
+                        </option>
+
+                        <option value="CONTRACT">
+                            Contract
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="skills">
+                        Required Skills
+                    </label>
+
+                    <input
+                        type="text"
+                        id="skills"
+                        placeholder="Java, Spring Boot, MySQL"
+                        required>
+
+                    <small>
+                        Separate multiple skills with commas.
+                    </small>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="salary">
+                        Salary
+                    </label>
+
+                    <input
+                        type="text"
+                        id="salary"
+                        placeholder="e.g. ₹6-10 LPA">
+
+                </div>
+
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn primary full-width">
+
+                Update Job
+
+            </button>
+
+
+        </form>
+
+
+        <p
+            id="jobMessage"
+            class="message"
+            aria-live="polite">
+        </p>
+
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 JobSphere. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/edit-job.js"></script>
+
+</body>
+
+</html>

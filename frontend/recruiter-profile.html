@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>JobSphere - Company Profile</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        JobSphere
+    </div>
+
+
+    <nav>
+
+        <a href="recruiter-dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="recruiter-jobs.html">
+            My Jobs
+        </a>
+
+        <a href="recruiter-applicants.html">
+            Applicants
+        </a>
+
+        <a href="recruiter-profile.html">
+            Company Profile
+        </a>
+
+        <a href="#" id="logoutBtn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="profile-container">
+
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="dashboard-label">
+                COMPANY SETTINGS
+            </p>
+
+            <h1>
+                Company Profile
+            </h1>
+
+            <p>
+                Keep your company information updated for
+                candidates exploring your opportunities.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="profile-card">
+
+
+        <div class="profile-card-header">
+
+            <div class="profile-icon">
+                🏢
+            </div>
+
+            <div>
+
+                <h2>
+                    Company Information
+                </h2>
+
+                <p>
+                    Provide clear and accurate information
+                    about your organization.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <form id="profileForm">
+
+
+            <div class="profile-form-grid">
+
+
+                <div class="form-group">
+
+                    <label for="companyName">
+                        Company Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="companyName"
+                        placeholder="Enter company name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="industry">
+                        Industry
+                    </label>
+
+                    <input
+                        type="text"
+                        id="industry"
+                        placeholder="e.g. Information Technology"
+                        required>
+
+                </div>
+
+
+                <div class="form-group full-form-field">
+
+                    <label for="description">
+                        Company Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="6"
+                        placeholder="Describe your company, products, services and culture..."
+                        required></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="website">
+                        Website
+                    </label>
+
+                    <input
+                        type="url"
+                        id="website"
+                        placeholder="https://example.com">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="e.g. Pune, Maharashtra"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="companySize">
+                        Company Size
+                    </label>
+
+                    <input
+                        type="text"
+                        id="companySize"
+                        placeholder="e.g. 11-50 employees">
+
+                </div>
+
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="btn primary full-width">
+
+                Save Company Profile
+
+            </button>
+
+
+        </form>
+
+
+        <p
+            id="profileMessage"
+            class="message"
+            aria-live="polite">
+        </p>
+
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 JobSphere. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/recruiter-profile.js"></script>
+
+</body>
+
+</html>

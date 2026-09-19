@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>JobSphere - Applicants</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        JobSphere
+    </div>
+
+
+    <nav>
+
+        <a href="recruiter-dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="recruiter-jobs.html">
+            My Jobs
+        </a>
+
+        <a href="recruiter-applicants.html">
+            Applicants
+        </a>
+
+        <a href="recruiter-profile.html">
+            Company Profile
+        </a>
+
+        <a href="#" id="logoutBtn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="jobs-container">
+
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="dashboard-label">
+                TALENT MANAGEMENT
+            </p>
+
+            <h1>
+                Applicants
+            </h1>
+
+            <p>
+                Review candidates who applied to your job
+                opportunities and manage their application status.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="applications-summary">
+
+        <div class="summary-card">
+
+            <div class="summary-icon">
+                👥
+            </div>
+
+            <div>
+
+                <h3>
+                    Candidate Applications
+                </h3>
+
+                <p>
+                    Review candidate details and update
+                    application progress.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <p
+        id="applicantsMessage"
+        class="message"
+        aria-live="polite">
+    </p>
+
+
+    <section class="jobs-results">
+
+        <div class="results-header">
+
+            <h2>
+                Applications Received
+            </h2>
+
+            <p>
+                Review applicants across your posted jobs.
+            </p>
+
+        </div>
+
+
+        <section
+            id="applicantsContainer"
+            class="jobs-grid">
+
+            <!-- Applicants will be loaded here -->
+
+        </section>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 JobSphere. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/recruiter-applicants.js"></script>
+
+</body>
+
+</html>

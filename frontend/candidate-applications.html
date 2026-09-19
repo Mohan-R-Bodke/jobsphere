@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>JobSphere - My Applications</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        JobSphere
+    </div>
+
+
+    <nav>
+
+        <a href="candidate-dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="jobs.html">
+            Find Jobs
+        </a>
+
+        <a href="candidate-applications.html">
+            Applications
+        </a>
+
+        <a href="candidate-profile.html">
+            Profile
+        </a>
+
+        <a href="#" id="logoutBtn">
+            Logout
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="jobs-container">
+
+
+    <section class="page-header">
+
+        <div>
+
+            <p class="dashboard-label">
+                APPLICATION TRACKER
+            </p>
+
+            <h1>
+                My Applications
+            </h1>
+
+            <p>
+                Track your applications and stay updated on
+                your recruitment progress.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="applications-summary">
+
+        <div class="summary-card">
+
+            <div class="summary-icon">
+                📄
+            </div>
+
+            <div>
+
+                <h3>
+                    Application History
+                </h3>
+
+                <p>
+                    Review the jobs you have applied for and
+                    their current status.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <p
+        id="applicationsMessage"
+        class="message"
+        aria-live="polite">
+    </p>
+
+
+    <section class="jobs-results">
+
+        <div class="results-header">
+
+            <h2>
+                Your Applications
+            </h2>
+
+            <p>
+                Your latest application information will appear below.
+            </p>
+
+        </div>
+
+
+        <section
+            id="applicationsContainer"
+            class="jobs-grid">
+
+            <!-- Applications will appear here -->
+
+        </section>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 JobSphere. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/candidate-applications.js"></script>
+
+
+</body>
+
+</html>

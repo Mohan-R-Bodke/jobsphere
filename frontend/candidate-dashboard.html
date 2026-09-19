@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobSphere - Candidate Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            JobSphere
+        </div>
+
+        <nav>
+            <a href="candidate-dashboard.html">Dashboard</a>
+            <a href="jobs.html">Find Jobs</a>
+            <a href="candidate-applications.html">Applications</a>
+            <a href="candidate-profile.html">Profile</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+
+    </header>
+
+
+    <main class="dashboard-container">
+
+        <section class="dashboard-header">
+
+            <div>
+                <p class="dashboard-label">
+                    CANDIDATE PORTAL
+                </p>
+
+                <h1>
+                    Candidate Dashboard
+                </h1>
+
+                <p>
+                    Find opportunities, manage your profile and track
+                    your applications.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-card-icon">
+                    🔎
+                </div>
+
+                <h3>
+                    Find Jobs
+                </h3>
+
+                <p>
+                    Search and explore available job opportunities
+                    based on your skills and preferences.
+                </p>
+
+                <button
+                    class="dashboard-btn"
+                    id="viewJobsBtn"
+                >
+                    View Jobs
+                </button>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-card-icon">
+                    📄
+                </div>
+
+                <h3>
+                    My Applications
+                </h3>
+
+                <p>
+                    Track your applications and check the latest
+                    status of every job you applied for.
+                </p>
+
+                <button
+                    class="dashboard-btn"
+                    id="applicationsBtn"
+                >
+                    My Applications
+                </button>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-card-icon">
+                    👤
+                </div>
+
+                <h3>
+                    My Profile
+                </h3>
+
+                <p>
+                    Keep your professional information updated and
+                    manage your candidate profile.
+                </p>
+
+                <button
+                    class="dashboard-btn"
+                    id="profileBtn"
+                >
+                    Manage Profile
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="welcome-section">
+
+            <p class="welcome-label">
+                ACCOUNT
+            </p>
+
+            <h2 id="welcomeMessage">
+                Welcome to JobSphere
+            </h2>
+
+            <p id="userEmail"></p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 JobSphere. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/candidate.js"></script>
+
+</body>
+
+</html>

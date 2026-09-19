@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JobSphere - Find Jobs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            JobSphere
+        </div>
+
+        <nav>
+            <a href="candidate-dashboard.html">Dashboard</a>
+            <a href="jobs.html">Find Jobs</a>
+            <a href="candidate-applications.html">Applications</a>
+            <a href="candidate-profile.html">Profile</a>
+            <a href="#" id="logoutBtn">Logout</a>
+        </nav>
+
+    </header>
+
+
+    <main class="jobs-container">
+
+        <section class="page-header">
+
+            <div>
+
+                <p class="dashboard-label">
+                    JOB SEARCH
+                </p>
+
+                <h1>
+                    Find Your Next Opportunity
+                </h1>
+
+                <p>
+                    Search and explore jobs that match your skills,
+                    experience and career goals.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="search-section">
+
+            <div class="search-field">
+
+                <label for="titleSearch">
+                    Job Title
+                </label>
+
+                <input
+                    type="text"
+                    id="titleSearch"
+                    placeholder="e.g. Java Developer"
+                >
+
+            </div>
+
+
+            <div class="search-field">
+
+                <label for="locationSearch">
+                    Location
+                </label>
+
+                <input
+                    type="text"
+                    id="locationSearch"
+                    placeholder="e.g. Pune"
+                >
+
+            </div>
+
+
+            <div class="search-field">
+
+                <label for="companySearch">
+                    Company
+                </label>
+
+                <input
+                    type="text"
+                    id="companySearch"
+                    placeholder="e.g. JobSphere"
+                >
+
+            </div>
+
+
+            <div class="search-field">
+
+                <label for="jobTypeSearch">
+                    Job Type
+                </label>
+
+                <select id="jobTypeSearch">
+
+                    <option value="">
+                        All Job Types
+                    </option>
+
+                    <option value="FULL_TIME">
+                        Full Time
+                    </option>
+
+                    <option value="PART_TIME">
+                        Part Time
+                    </option>
+
+                    <option value="INTERNSHIP">
+                        Internship
+                    </option>
+
+                    <option value="CONTRACT">
+                        Contract
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="search-action">
+
+                <button
+                    id="searchBtn"
+                    class="btn primary"
+                >
+                    Search Jobs
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="jobs-results">
+
+            <div class="results-header">
+
+                <h2>
+                    Available Jobs
+                </h2>
+
+                <p>
+                    Explore the latest opportunities on JobSphere.
+                </p>
+
+            </div>
+
+
+            <p
+                id="jobsMessage"
+                class="message"
+                aria-live="polite"
+            ></p>
+
+
+            <section
+                id="jobsContainer"
+                class="jobs-grid"
+            >
+
+                <!-- Jobs will be loaded here -->
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 JobSphere. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/jobs.js"></script>
+
+</body>
+
+</html>
