@@ -260,6 +260,17 @@ Example request:
 ```
 
 ---
+# Users
+
+## Get All Users
+
+**GET** `/api/users`
+
+Required role:
+
+```text
+ADMIN
+```
 
 # Admin
 
