@@ -35,19 +35,24 @@ public class SecurityConfig {
         http
             .csrf(csrf -> csrf.disable())
             .cors(cors -> {})
-
             .sessionManagement(session ->
                 session.sessionCreationPolicy(
                     SessionCreationPolicy.STATELESS
                 )
             )
-
             .authorizeHttpRequests(auth -> auth
 
                 // Public authentication endpoints
                 .requestMatchers(
                     "/api/auth/register",
                     "/api/auth/login"
+                ).permitAll()
+
+                // Public job browsing
+                .requestMatchers(
+                    HttpMethod.GET,
+                    "/api/jobs",
+                    "/api/jobs/**"
                 ).permitAll()
 
                 // Admin
@@ -58,17 +63,7 @@ public class SecurityConfig {
                 .requestMatchers("/api/users/**")
                     .hasRole("ADMIN")
 
-                // Jobs
-                .requestMatchers(
-                    HttpMethod.GET,
-                    "/api/jobs",
-                    "/api/jobs/**"
-                ).hasAnyRole(
-                    "CANDIDATE",
-                    "RECRUITER",
-                    "ADMIN"
-                )
-
+                // Recruiter job management
                 .requestMatchers(
                     HttpMethod.POST,
                     "/api/jobs"
@@ -116,7 +111,6 @@ public class SecurityConfig {
                 // Everything else requires authentication
                 .anyRequest().authenticated()
             )
-
             .addFilterBefore(
                 jwtAuthenticationFilter,
                 UsernamePasswordAuthenticationFilter.class
