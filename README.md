@@ -476,7 +476,7 @@ Railway MySQL
 Database
 ```
 
-Live Application
+### Live Application
 
 Frontend:
 https://jobsphere-gules.vercel.app/
@@ -486,12 +486,13 @@ https://jobsphere-production-a956.up.railway.app/
 
 The frontend communicates with the Spring Boot backend through REST APIs secured using JWT authentication and role-based authorization.
 
-Deployment Technologies
-Frontend: Vercel
-Backend: Railway
-Database: Railway MySQL
-Containerization: Docker
-Version Control: GitHub
+### Deployment Technologies
+
+* Frontend: Vercel
+* Backend: Railway
+* Database: Railway MySQL
+* Containerization: Docker
+* Version Control: GitHub
 
 ---
 
