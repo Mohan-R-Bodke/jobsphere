@@ -3,7 +3,7 @@
 Base URL:
 
 ```text
-http://localhost:8080
+https://jobsphere-production-a956.up.railway.app
 ```
 
 ## Authentication
