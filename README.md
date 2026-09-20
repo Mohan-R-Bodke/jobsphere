@@ -426,7 +426,7 @@ frontend/index.html
 The frontend communicates with:
 
 ```text
-http://localhost:8080/api
+https://jobsphere-production-a956.up.railway.app/api
 ```
 
 ---
