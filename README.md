@@ -43,6 +43,28 @@ The platform provides separate workflows for **Candidates, Recruiters, and Admin
 
 ---
 
+## Screenshots
+
+### Home Page
+![JobSphere Home](docs/screenshots/home.png)
+
+### Login
+![JobSphere Login](docs/screenshots/login.png)
+
+### Signup
+![JobSphere Signup](docs/screenshots/signup.png)
+
+### Candidate Dashboard
+![Candidate Dashboard](docs/screenshots/candidate-dashboard.png)
+
+### Recruiter Dashboard
+![Recruiter Dashboard](docs/screenshots/recruiter-dashboard.png)
+
+### Admin Dashboard
+![Admin Dashboard](docs/screenshots/admin-dashboard.png)
+
+---
+
 ## Security
 
 JobSphere implements authentication and authorization using:
