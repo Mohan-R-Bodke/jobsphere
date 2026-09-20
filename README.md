@@ -453,6 +453,48 @@ https://jobsphere-production-a956.up.railway.app/api
 
 ---
 
+## Live Deployment
+
+JobSphere is deployed using a separated frontend and backend architecture.
+
+### Production Architecture
+
+```text
+User
+ │
+ ▼
+Vercel
+Frontend
+ │
+ │ HTTPS REST API
+ ▼
+Railway
+Spring Boot Backend
+ │
+ ▼
+Railway MySQL
+Database
+
+
+Live Application
+
+Frontend:
+https://jobsphere-gules.vercel.app/
+
+Backend API:
+https://jobsphere-production-a956.up.railway.app/
+
+The frontend communicates with the Spring Boot backend through REST APIs secured using JWT authentication and role-based authorization.
+
+Deployment Technologies
+Frontend: Vercel
+Backend: Railway
+Database: Railway MySQL
+Containerization: Docker
+Version Control: GitHub
+
+---
+
 ## API Documentation
 
 Detailed API documentation is available in:
