@@ -509,11 +509,9 @@ It covers:
 * Pagination for large datasets
 * Recruiter analytics dashboard
 * Candidate skill matching
-* Cloud deployment
-* Docker containerization
 * CI/CD pipeline
 * Automated unit and integration testing
-* Production database configuration
+
 
 ---
 
