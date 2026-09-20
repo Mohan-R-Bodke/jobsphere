@@ -474,7 +474,7 @@ Spring Boot Backend
  ▼
 Railway MySQL
 Database
-
+```
 
 Live Application
 
